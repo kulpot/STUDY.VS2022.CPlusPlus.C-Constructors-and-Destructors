@@ -7,6 +7,8 @@ using std::string;
 // --------------------------------------- C++ Constructors and Destructors ------------------------------------
 //ref link:https://www.youtube.com/watch?v=eeooGDIyQpM&list=PLRwVmtr-pp05LyV3bYHwrFacNSNjbUqS6&index=4
 
+// Destructor - is for cleaning up classes
+
 class Person
 {
 public:
@@ -14,17 +16,22 @@ public:
 	{
 		cout << "Person()" << endl;
 	}
+	~Person()				// Destructor
+	{
+		cout << "~Person()" << endl;
+	}
 };
 
 void main()
 {
 	cout << "Before the scoped block" << endl;
-	{
-		Person person;
-	}
+	//{
+	//	Person person;	// person stack scope
+	//}				// C++ cleanup for Destructor ~Person()
+	Person person;
 	cout << "After the scoped block" << endl;
 	//Person person;
-}
+}// C++ cleanup for Destructor ~Person()	-- Person person not inside a {}
 
 
 
