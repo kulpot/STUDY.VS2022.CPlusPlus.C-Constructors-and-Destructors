@@ -18,7 +18,12 @@ public:
 
 void main()
 {
-	Person person;
+	cout << "Before the scoped block" << endl;
+	{
+		Person person;
+	}
+	cout << "After the scoped block" << endl;
+	//Person person;
 }
 
 
