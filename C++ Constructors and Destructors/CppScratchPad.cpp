@@ -3,7 +3,18 @@
 using std::cout;
 using std::string;
 
+// --------------------------------------- C++ Constructors and Destructors ------------------------------------
+//ref link:https://www.youtube.com/watch?v=eeooGDIyQpM&list=PLRwVmtr-pp05LyV3bYHwrFacNSNjbUqS6&index=4
 
+class Person
+{
+public:
+};
+
+void main()
+{
+	Person person;
+}
 
 
 
