@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 using std::cout;
+using std::endl;
 using std::string;
 
 // --------------------------------------- C++ Constructors and Destructors ------------------------------------
@@ -9,6 +10,10 @@ using std::string;
 class Person
 {
 public:
+	Person()
+	{
+		cout << "Person()" << endl;
+	}
 };
 
 void main()
