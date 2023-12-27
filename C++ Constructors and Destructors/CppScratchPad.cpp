@@ -10,7 +10,7 @@ using std::string;
 class Person
 {
 public:
-	Person()
+	Person()		// Constructor 
 	{
 		cout << "Person()" << endl;
 	}
